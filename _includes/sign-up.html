@@ -1,0 +1,22 @@
+{% if page.sign-up-banner == true %}
+
+<section class="padded-t">
+  <div class="center padded {{page.sign-up.background }}">
+    <h3 class="uppercase editable {{page.sign-up.main-text }}">
+        Subscribe Now
+    </h3>
+    <p class="editable {{page.sign-up.sub-text }}">
+        This one could be connected to your email newsletter, like mailchimp or mailerlite or just a standard email form.
+    </p>
+  
+    <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" />
+      <input type="email" name="_replyto" placeholder="Your Email" />
+      <input type="submit" value="Send" class="{{page.sign-up.button }}" />
+    </form>
+  
+  </div>
+</section>
+
+
+{% endif %}

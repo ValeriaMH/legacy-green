@@ -1,0 +1,145 @@
+collections:
+  posts:
+    output: true
+    permalink: /posts/:year/:slug
+  archives: 
+    output: true
+    
+_options:
+  content:
+    styles: /editor.css
+    blockquote: true
+    horizontalrule: true
+    format: p h1 h2 h3 h4 h5 h6
+    bold: true
+    italic: true
+    numberedlist: true
+    bulletedlist: true
+    code: true
+    table: true
+    right: right
+    center: center
+    left: left
+    embed: true
+    link: true
+    undo: true
+    redo: true
+    underline: true
+    strike: true
+    image: true
+
+_select_data:
+  aspect-ratios:
+    - square
+    - portrait
+    - portrait-tall
+    - landscape
+    - landscape-wide
+  image-positions:
+    - bg-pos-t
+    - bg-pos-b
+    - bg-pos-c
+  text-aligns:
+    - center
+    - right
+    - left
+
+  column-sizes:
+    col-6: One Half
+    col-12: Full Width
+    col-4: One Third
+    col-3: One Quarter
+    col-6_sm-12: One Half Desktop (Mobile Stacked)
+    col-7_sm-12: 60% Desktop (Mobile Stacked)
+    col-3_sm-12: One Quarter Desktop (Mobile Stacked)
+    col-3_sm-6_xs-12: One Quarter Desktop (One Half Tablet - Full Width Mobile)
+    col-3_md-4_sm-6_xs-11: One Quarter Desktop (One Third Medium - One Half Tablet - 90% Mobile)
+    col-4_sm-12: One Third Desktop (Mobile Stacked)
+    col-4_sm-7_xs-11: One Third Desktop (60% Tablet 90% Mobile)
+  
+  block-positions:
+    grid-left: Left
+    grid-right: Right
+    grid-center: Center
+
+  banner-talls:
+    tall-100: 100% window
+    tall-90: 90% window
+    tall-80: 80% window
+    tall-70: 70% window
+    tall-60: 60% window
+
+  small-devices-talls:
+    md-tall-80: 80% window Tablet
+    tall-60-sm: 60% window Mobile
+    tall-50-md: 50% window Tablet
+    tall-40-sm: 40% window Mobile
+
+  image-positions:
+    bg-pos-t: Top
+    bg-pos-b: Bottom
+    bg-pos-b: Center
+
+  text-aligns:
+    center: Center
+    right: Right
+    left: Left
+  
+  texts:
+    dark-text: Dark Text
+    semi-dark-text: Semi Dark Text
+    grey-text: Grey Text
+    warm-text: Warm Text
+    accent-text: Accent Text
+    featured-text: Featured Text
+    white-text: White Text
+  
+  main-texts:
+    dark-text: Dark Text
+    semi-dark-text: Semi Dark Text
+    grey-text: Grey Text
+    warm-text: Warm Text
+    accent-text: Accent Text
+    featured-text: Featured Text
+    white-text: White Text
+  
+  sub-texts:
+    dark-text: Dark Text
+    semi-dark-text: Semi Dark Text
+    grey-text: Grey Text
+    warm-text: Warm Text
+    accent-text: Accent Text
+    featured-text: Featured Text
+    white-text: White Text
+  
+  highlights:
+    bg-dark: Dark Background
+    bg-semi-dark: Semi Dark Background
+    bg-grey: Grey Background
+    bg-warm: Warm Background
+    bg-accent: Accent Background
+    bg-light-accent: Light Accent Background
+    bg-featured: Featured Background
+    bg-light-featured: Light Featured Background
+    bg-light: Light Background
+    bg-white: White Background
+
+  backgrounds:
+    bg-dark: Dark Background
+    bg-semi-dark: Semi Dark Background
+    bg-grey: Grey Background
+    bg-warm: Warm Background
+    bg-accent: Accent Background
+    bg-light-accent: Light Accent Background
+    bg-featured: Featured Background
+    bg-light-featured: Light Featured Background
+    bg-light: Light Background
+    bg-white: White Background
+  
+  buttons:
+    button: Default Button
+    button-inverted: Inverted Button
+    button-special: Special Button
+    
+  
+    

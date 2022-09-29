@@ -1,0 +1,27 @@
+{% if page.faq == true %}
+
+<section class="grid padded padded-t-lg">
+
+    <div class="col-8_md-7_sm-12-left padded">
+        <h3 class="medium-bold editable">
+            Frequent questions
+        </h3>
+        <dl class="accordion">
+  
+          {% for item in site.data.frequent-questions %}
+  
+          <dt> {{item.question }}</dt>
+          <dd> {{%item.answer %}}</dd>
+        
+          {% endfor %}
+        
+        </dl>
+      </div>
+      <div class="col-4_md-5 hide-sm">
+        <div class="bg-image tall-60 tall-40-md" style="background-image:url('{{ page.banner-faq_image }}')"></div>
+      </div>
+    
+    
+  </section>
+
+  {% endif %}

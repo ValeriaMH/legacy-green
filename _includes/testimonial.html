@@ -1,0 +1,30 @@
+{% if page.testimonial-section == true %}
+
+<section class="center padded padded-t padded-b-0">
+  <h2 class="editable"> Client Love </h2>
+  <div class="grid padded-1 horizontal-scroll">
+
+    {% for item in site.data.testimonial %}
+
+    <div class="{{item.card-column-size }} padded-1">
+      <div class="card">
+        <img src="{{item.profile_image }}" class="profile" />
+        <p class="author"> {{item.author }} </p>
+        <p class="company"> {{item.company }} </p>
+        <p>{{item.testimonial }}</p>
+        <span> {{item.stars }} </span>
+      </div>
+    </div>
+
+    {% endfor %}
+
+
+</div></section>
+
+<div class="grid-center">
+  <div class="col-12 center padded-1">
+    <a href="https://google.com" class="{{page.testimonial.button }} editable" target="_blank"> View our reviews in Google </a>
+  </div>
+</div>
+
+{% endif %}

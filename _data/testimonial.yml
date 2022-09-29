@@ -1,0 +1,24 @@
+- profile_image: /images/demo-web21.jpg
+  card-column-size: col-3_md-4_sm-6_xs-11
+  author: Jhon
+  company: ENVATO
+  testimonial: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  stars: ★ ★ ★ ★ ★
+- profile_image: /images/demo-web23.jpg
+  card-column-size: col-3_md-4_sm-6_xs-11
+  author: Jane
+  company: The Butchers Shop
+  testimonial: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  stars: ★ ★ ★ ★ ★
+- profile_image: /images/demo-web21.jpg
+  card-column-size: col-3_md-4_sm-6_xs-11
+  author: Emilio
+  company: EON
+  testimonial: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  stars: ★ ★ ★ ★ ★
+- profile_image: /images/demo-web23.jpg
+  card-column-size: col-3_md-4_sm-6_xs-11
+  author: Emilio
+  company: EON
+  testimonial: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  stars: ★ ★ ★ ★ ★

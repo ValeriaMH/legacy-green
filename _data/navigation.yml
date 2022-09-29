@@ -1,0 +1,51 @@
+menu:
+  link-1:
+    name: Home
+    url: /index
+  link-2: 
+    name: Collections
+    url: /collections
+  link-3: 
+    name: Delivery
+    url: /delivery
+  link-4: 
+    name: About
+    url: /about
+  link-5: 
+    name: Contact
+    url: /contact
+social:
+  instagram: true
+  facebook: true
+  youtube: false
+  pinterest: true
+  twitter: false
+  tik-tok: false
+quick-links:
+  link-1:
+    name: Shop Now
+    url: /index/#order
+    id: order
+  link-2: 
+    name: Best Sellers
+    url: /index/#meals
+    id: meals
+  link-3: 
+    name: Collections
+    url: /index/#how
+    id: how
+  link-4: 
+    name: Our Process
+    url: /about/#peru
+    id: peru
+explore-menu:
+- name: Order here
+  url: /menu
+- name: How delivery works
+  url: /delivery
+- name: Contact us
+  url: /contact
+- name: Connect with us on Facebook
+  url: /menu
+- name: Explore our website
+  url: /index

@@ -1,0 +1,76 @@
+text_colors:
+  dark-text_color: '#000000'
+  semi-dark-text_color: '#8f8277'
+  grey-text_color: '#b6b3a5'
+  warm-text_color: '#efebea'
+  accent-text_color: '#daaf64'
+  featured-text_color: '#daaf64'
+  white-text_color: '#ffffff'
+background_colors:
+  dark-background_color: '#000000'
+  semi-dark-background_color: '#8f8277'
+  grey-background_color: '#b6b3a5'
+  warm-background_color: '#efebea'
+  accent-background_color: '#daaf64'
+  light-accent-background_color: '#efc98b'
+  featured-background_color: '#daaf64'
+  light-featured-background_color: '#cbc5be'
+  light-background_color: '#ffffff'
+  white-background_color: '#ffffff'
+body:
+  body-font-family: "'verdigris-mvb-pro-big', serif"
+  body-line-height: '1.1'
+  body-heading-size: '2rem'
+  body-sub-heading-size: '1.8rem'
+  body-small-heading-size: '1.6rem'
+  body-text-size: '1rem'
+  body-text-weight: '200'
+  body-background_color: '#ffffff'
+menu:
+  mobile-menu-text-size: '1.5rem'
+  mobile-menu-text-weight: '400'
+  nav-background_color: '#efebea'
+  nav-text_color: '#000000'
+footer:
+  footer-text_color: '#000000'
+  footer-text-size: '0.9rem'
+  footer-text-weight: '400'
+buttons:
+  default-button:
+    default-background_color: '#efebea'
+    default-border_color: '#efebea'
+    default-text_color: '#8f8277'
+    default-hover-background_color: '#8f8277'
+    default-hover-border_color: '#efebea'
+    default-hover-text_color: '#efebea'
+  inverted-button:
+    inverted-background_color: '#8f8277'
+    inverted-border_color: '#8f8277'
+    inverted-text_color: '#efebea'
+    inverted-hover-background_color: '#efebea'
+    inverted-hover-border_color: '#8f8277'
+    inverted-hover-text_color: '#8f8277'
+  special-button:
+    special-background_color: '#daaf64'
+    special-border_color: '#daaf64'
+    special-text_color: '#efebea'
+    special-hover-background_color: '#efebea'
+    special-hover-border_color: '#daaf64'
+    special-hover-text_color: '#daaf64'
+special-text:
+  big-heading-text-size: '4rem'
+  big-heading-text-weight: '700'
+  medium-heading-text-size: '2.8rem'
+  medium-heading-text-weight: '400'
+  big-text-size: '1.5rem'
+  story-team-font-family: "'verdigris-mvb-pro-big', serif"
+  story-team-text-size: '3.5rem'
+  number-font-family: "'verdigris-mvb-pro-big', serif"
+  number-text-size: '2.7rem'
+testimonial:
+  card_color: '#ffffff'
+  author-text-weight: bold
+
+  
+
+  
