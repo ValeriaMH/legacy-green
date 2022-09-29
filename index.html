@@ -1,0 +1,260 @@
+---
+layout: default
+seo:
+  title: Candles & Co. | Soy candles in Melbourne
+  description:
+  social_image:
+  keywords:
+  hide-from-google: true
+notification-bar: false
+bar:
+  background: bg-accent
+  text: white-text
+  text-align: center
+menu:
+  button-style: false
+banner:
+  banner_image: /images/candle-web5.jpeg
+  image-position: Top
+  banner-tall: tall-100
+  small-devices-tall: tall-60-sm
+  column-size: col-7_sm-12
+  text-align: left
+  main-text: white-text
+  sub-text: white-text
+  highlight: bg-grey
+  button: button
+  banner-button-title: Shop collections
+  banner-button-link: /collections
+first-section:
+  - column-size: col-6_sm-12
+    background_image: /images/candle-web4.jpeg
+    hover-title: Spring
+    title: Inspired in flower fragances.
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime,
+      distinctio illum dolore architecto.
+  - column-size: col-6_sm-12
+    background_image: /images/candle-web2.webp
+    hover-title: White
+    title: A minimalist option for you.
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime,
+      distinctio illum dolore architecto.
+  - column-size: col-6_sm-12
+    background_image: /images/candle-web6.jpeg
+    hover-title: Love
+    title: Do what you love with this candles.
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime,
+      distinctio illum dolore architecto.
+  - column-size: col-6_sm-12
+    background_image: /images/candle-web1.jpg
+    hover-title: Yellow
+    title: A pop up of color in your house.
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime,
+      distinctio illum dolore architecto.
+first-section-button:
+  button: button-inverted
+  first-button-title: Shop collections
+  first-button-link: /collections
+banner-2:
+  banner_image: /images/candle-web8.jpeg
+  banner-tall: tall-100
+  small-devices-tall: tall-50-md
+  column-size: col-6_sm-12
+  text-align: center
+  main-text: white-text
+  sub-text: white-text
+  block-position: grid-center
+  button: button
+  banner2-button-title: Show me
+  banner2-button-link: /about/#peru
+best-sellers-heading: true
+best-sellers:
+  - background_image: /images/candle-web3.jpeg
+    image-position: bg-pos-c
+    title: Bloom Candle
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+      aspernatur quod minima ullam ab, in nihil temporibus velit, quae iure
+      omnis dignissimos fuga, laudantium a quo alias qui ipsam!
+    button: button-inverted
+    best-button-title: Order now
+    best-button-link: /collections
+  - background_image: /images/candle-web10.jpeg
+    image-position: bg-pos-c
+    title: Peace Candle
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+      aspernatur quod minima ullam ab, in nihil temporibus velit, quae iure
+      omnis dignissimos fuga, laudantium a quo alias qui ipsam!
+    button: button-inverted
+    best-button-title: Order now
+    best-button-link: /collections
+  - background_image: /images/candle-web11.jpeg
+    image-position: bg-pos-c
+    title: Special Candle
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+      aspernatur quod minima ullam ab, in nihil temporibus velit, quae iure
+      omnis dignissimos fuga, laudantium a quo alias qui ipsam!
+    button: button-inverted
+    best-button-title: Order now
+    best-button-link: /collections
+special-banner: true
+special-offer:
+  background: bg-accent
+  main-text: white-text
+  sub-text: white-text
+why-us:
+  background_image: /images/candle-web7.jpeg
+  background: bg-warm
+  button: button-inverted
+testimonial-section: true
+testimonial:
+  button: button-inverted
+faq: true
+banner-faq_image: /images/candle-web9.jpeg
+sign-up-banner: true
+sign-up:
+  background: bg-light-featured
+  main-text: dark-text
+  sub-text: dark-text
+  button: button-special
+---
+
+<header class="bg-image {{page.banner.image-position }} grid {{page.banner.banner-tall }} {{page.banner.small-devices-tall }}" style="background-image:url('{{ page.banner.banner_image }}')">
+
+    {% include header-nav-index.html %}
+
+      <div class="{{page.banner.column-size }} {{page.banner.text-align }} padded">
+        <h3>
+          <span class="big-bold {{page.banner.main-text }} editable"> Candles & Co. </span> <br />
+          <span class="medium-bold {{page.banner.sub-text }} editable"> Light up your space </span> <br />
+        </h3>
+        <h1 class="padded-b-1"> 
+          <span class="{% if page.banner.highlight == true %} highlight {% endif %} {{page.banner.highlight }} text-15 editable">Handmade soy candles in Melbourne.</span></h1>
+          <a href="{{page.banner.banner-button-link }}" class="{{page.banner.button }}"> {{page.banner.banner-button-title }} </a>
+      </div>
+</header>
+
+
+<!--------------------  FIRST SECTION -------------------->
+
+<section class="padded center padded-t-lg" id="{{site.data.navigation.quick-links.link-3.id }}">
+    <h2 class="editable">
+        Collections
+    </h2>
+
+    <div class="grid padded-1">
+
+      {% for item in page.first-section %}
+        <div class="{{item.column-size }} padded-1">
+            <div class="hover-container" style="background-image:url('{{ item.background_image }}')">
+            <div class="hover-overlay">
+                <div class="hover-inner">
+                    <h3> {{item.hover-title }} </h3>
+                </div>
+            </div>
+            </div>
+            <div class="padded">
+                <h4>{{item.title }} </h4>
+                <p>{{item.description }}</p>
+            </div>
+        </div>
+
+        {% endfor %}
+        
+        <div class="col-12 center">
+          <a href="{{page.first-section-button.first-button-link }}" class="{{page.first-section-button.button }}">
+            {{page.first-section-button.first-button-title }} </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<!--------------------  BANNER -------------------->
+
+<section class="bg-image {{page.banner-2.block-position }} fixed {{page.banner-2.banner-tall }} {{page.banner-2.small-devices-tall }}" style="background-image:url('{{ page.banner-2.banner_image }}')">
+    <div class="{{page.banner-2.column-size }}-middle {{page.banner-2.text-align }} padded-sm">
+      <h2 class="big-bold {{page.banner-2.main-text }} editable">
+          How we do it
+      </h2>
+      <h3 class="{{page.banner-2.sub-text }} editable">
+          from our suppliers to your delivery
+      </h3>
+      <a href="{{page.banner-2.banner2-button-link }}" class="{{page.banner-2.button }}">{{page.banner-2.banner2-button-title }}</a>
+    </div>
+  </section> 
+  
+
+<!--------------------  BEST SELLERS -------------------->
+
+  <section class="padded-tb-lg" id="{{site.data.navigation.quick-links.link-2.id }}">
+    
+    {% if page.best-sellers-heading == true %}
+    <h2 class="editable center padded-sm">Best Sellers</h2>
+    {% endif %}
+
+    {% for item in page.best-sellers %}
+    <div class="grid flex-flip">
+      <div class="col-6_sm-12 bg-image {{item.image-position }} sm-landscape-wide" style="background-image:url('{{ item.background_image }}')"></div>
+      <div class="col-6_sm-12-middle padded">
+        <h3> {{item.title }} </h3>
+        <p> {{item.description }} </p>
+        <a class="{{item.button }}" href="{{item.best-button-link }}"> {{item.best-button-title }} </a>
+      </div>
+    </div>
+    {% endfor %}
+    
+  </section>
+
+<!--------------------  BANNER DISCOUNT -------------------->
+
+{% include special-offer.html %}
+
+<!--------------------  SHOP MEALS -------------------->
+
+{% include shopify.html %}
+
+<!--------------------  WHY PERUVIAN BOWLS -------------------->
+
+<section class="grid padded padded-l-0 padded-tb sm-padded">
+  <div class="bg-image col-7_sm-12 tall-70 tall-50-sm" style="background-image:url('{{ page.why-us.background_image }}')">
+  </div>
+  <div class="col-5_sm-12-middle relative">
+    <div class="bg-why-over {{ page.why-us.background }} bg-over">
+        <h2 class="big-bold editable">
+            Our Story
+        </h2>
+        <p class="editable">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="editable">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="editable">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="editable">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a class="{{page.why-us.button }}" href="{{page.why-us.why-button-link }}"> {{page.why-us.why-button-title }} </a>
+      </div>
+    </div>
+</section>
+
+<!--------------------  TESTIMONIAL SECTION -------------------->
+    
+{% include testimonial.html %}
+
+<!--------------------  FAQ SECTION -------------------->
+
+{% include faq.html %}
+
+<!--------------------  SUSCRIBE -------------------->
+
+{% include sign-up.html %}

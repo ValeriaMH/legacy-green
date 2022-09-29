@@ -1,0 +1,93 @@
+---
+layout: default
+seo:
+  title: Contact | Candles & Co.
+  description:
+  social_image:
+  keywords:
+  hide-from-google: true
+notification-bar: false
+bar:
+  background: bg-accent
+  text: white-text
+  text-align: center
+menu:
+  button-style: true
+banner:
+  banner_image: /images/candle-web4.jpeg
+  image-position: bg-pos-c
+  banner-tall: tall-80
+  small-devices-tall: tall-40-sm
+  column-size: col-6_sm-12
+  text-align: left
+  main-content: Hello
+  sub-content: Get in touch
+  main-text: white-text
+  sub-text: white-text
+  block-position: grid-right
+contact:
+  button: button-inverted
+testimonial-section: false
+testimonial:
+  button: button-inverted
+faq: false
+banner-faq_image: /images/cafe-web17.jpeg
+sign-up-banner: false
+sign-up:
+  background: bg-featured
+  main-text: dark-text
+  sub-text: dark-text
+  button: button
+---
+
+<!--------------------  HEADER AND MENU -------------------->
+
+  <section class="bg-image {{page.banner.image-position }} {{page.banner.block-position }} {{page.banner.banner-tall }} {{page.banner.small-devices-tall }}" style="background-image:url('{{ page.banner.banner_image }}')">
+
+    {% include header-nav-index.html %}
+
+      <div class="{{page.banner.column-size }}-middle {{page.banner.text-align }} padded-b-lg sm-padded">
+      <h3>
+        <span class="big-bold {{page.banner.main-text }} editable"> {{page.banner.main-content }} </span> <br>
+        <span class="medium-bold {{page.banner.sub-text }} editable"> {{page.banner.sub-content }} </span> <br>
+      </h3>
+    </div>
+
+  </section>
+
+<!-- Contact Form -->
+<section class="grid padded contact">
+    <div class="col-6_sm-12 padded">
+      <h2 class="editable"> Contact us </h2>
+      <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="editable"> <strong> Email: </strong> hello@company.com </p>
+      <p class="editable"> <strong> Phone: </strong> 0412 555 555 </p>
+      <p class="editable"> <strong> Location: </strong> Brisbane & Gold Coast </p>
+    </div>
+    <div class="col-6_sm-12-middle padded">
+      <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
+        <div class="col-6_sm-12">
+          <input type="text" name="name" placeholder="Your Name">
+        </div>
+        <div class="col-6_sm-12">
+          <input type="email" name="_replyto" placeholder="Your Email">
+        </div>
+        <div class="col-12">
+          <textarea placeholder="Your Message"></textarea>
+          <input type="submit" value="Send" class="{{page.contact.button }}">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!--------------------  TESTIMONIAL SECTION -------------------->
+    
+{% include testimonial.html %}
+
+<!--------------------  FAQ SECTION -------------------->
+
+{% include faq.html %}
+
+<!--------------------  SUSCRIBE -------------------->
+
+{% include sign-up.html %}

@@ -1,0 +1,114 @@
+---
+layout: default
+seo:
+  title: Delivery | Candles & Co.
+  description:
+  social_image:
+  keywords:
+  hide-from-google: true
+notification-bar: false
+bar:
+  background: bg-accent
+  text: white-text
+  text-align: center
+menu:
+  button-style: true
+banner:
+  banner_image: /images/candle-web11.jpeg
+  image-position: bg-pos-c
+  banner-tall: tall-70
+  small-devices-tall: tall-50-sm
+  column-size: col-5_sm-12
+  text-align: left
+  main-content: The best candles right at your door
+  sub-content: We deliver candles anytime
+  main-text: dark-text
+  sub-text: dark-text
+  content-background: bg-white
+  button: button-inverted
+  button-title: Order now
+  button-link: /shop
+steps:
+  - column-size: col-4_sm-12
+    number: 1
+    title: Choose your candles
+    description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  - column-size: col-4_sm-12
+    number: 2
+    title: Choose a delivery option
+    description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  - column-size: col-4_sm-12
+    number: 3
+    title: We take it your house
+    description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+banner-2:
+  banner_image: /images/candle-web5.jpeg
+  image-position: bg-pos-b
+  banner-tall: tall-80
+  small-devices-tall: tall-50-md
+testimonial-section: false
+testimonial:
+  button: button-inverted
+faq: false
+banner-faq_image: /images/candle-web9.jpeg
+sign-up-banner: false
+sign-up:
+  background: bg-featured
+  main-text: dark-text
+  sub-text: dark-text
+  button: button
+---
+
+<!--------------------  HEADER AND MENU -------------------->
+
+  <section class="bg-image {{page.banner.image-position }} grid {{page.banner.banner-tall }} {{page.banner.small-devices-tall }}" style="background-image:url('{{ page.banner.banner_image }}')">
+
+    {% include header-nav-index.html %}
+
+      <div class="col-12 grid-right-middle">
+        <div class="{{page.banner.column-size }}-middle {{page.banner.content-background }} {{page.banner.text-align }} padded-2">
+          <h3 class="{{page.banner.main-text }} editable"> {{page.banner.main-content }} </h3>
+          <p class="{{page.banner.sub-text }} editable"> {{page.banner.sub-content }} </p>
+          <a href="{{page.banner.button-link }}" class="{{page.banner.button }}"> {{page.banner.button-title }} </a>
+        </div>
+      </div>
+      
+    
+
+  </section>
+
+
+<!-- DELIVERY STEPS  -->
+
+<section class="padded center">
+  <h2 class="editable"> How Delivery Works </h2>
+  <div class="grid padded-1">
+
+    {% for item in page.steps %}
+    <div class="{{item.column-size }} padded">
+      <span class="number-text"> {{item.number }} </span>
+      <h4> {{item.title }}  </h4>
+      <p> {{item.description }} </p>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+<!--------------------  BG IMAGE -------------------->
+
+<section class="bg-image grid-center {{page.banner-2.image-position }} {{page.banner-2.banner-tall }} {{page.banner-2.small-devices-tall }}" style="background-image:url('{{ page.banner-2.banner_image }}')">
+  
+</section>  
+
+<!--------------------  TESTIMONIAL SECTION -------------------->
+    
+{% include testimonial.html %}
+
+<!--------------------  FAQ SECTION -------------------->
+
+{% include faq.html %}
+
+<!--------------------  SUSCRIBE -------------------->
+
+{% include sign-up.html %}
