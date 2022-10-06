@@ -3,13 +3,13 @@ menu:
     name: Home
     url: /index
   link-2: 
-    name: Collections
+    name: Services
     url: /collections
   link-3: 
-    name: Delivery
+    name: Why choose us
     url: /delivery
   link-4: 
-    name: About
+    name: About us
     url: /about
   link-5: 
     name: Contact

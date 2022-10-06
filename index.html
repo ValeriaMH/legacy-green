@@ -1,7 +1,7 @@
 ---
 layout: default
 seo:
-  title: Candles & Co. | Soy candles in Melbourne
+  title: Home | Legacy Green Cleaning Services 
   description:
   social_image:
   keywords:
@@ -18,11 +18,11 @@ banner:
   image-position: Top
   banner-tall: tall-100
   small-devices-tall: tall-60-sm
-  column-size: col-7_sm-12
+  column-size: col-8_sm-12
   text-align: left
   main-text: white-text
   sub-text: white-text
-  highlight: bg-grey
+  highlight: bg-accent
   button: button
   banner-button-title: Shop collections
   banner-button-link: /collections
@@ -105,14 +105,16 @@ best-sellers:
     best-button-link: /collections
 special-banner: true
 special-offer:
-  background: bg-accent
+  background: bg-semi-dark
   main-text: white-text
   sub-text: white-text
 why-us:
   background_image: /images/candle-web7.jpeg
-  background: bg-warm
+  background: bg-grey
   button: button-inverted
-testimonial-section: true
+  why-button-link:
+  why-button-title: Get to know more about us
+testimonial-section: false
 testimonial:
   button: button-inverted
 faq: true
@@ -130,12 +132,12 @@ sign-up:
     {% include header-nav-index.html %}
 
       <div class="{{page.banner.column-size }} {{page.banner.text-align }} padded">
-        <h3>
-          <span class="big-bold {{page.banner.main-text }} editable"> Candles & Co. </span> <br />
-          <span class="medium-bold {{page.banner.sub-text }} editable"> Light up your space </span> <br />
-        </h3>
+        <h2 class="big-bold {{page.banner.main-text }} editable">
+          Legacy Green<br> Cleaning Services
+        </h2>
+        <h3 class="medium-bold {{page.banner.sub-text }} editable"> Passionate about the environment</h3>
         <h1 class="padded-b-1"> 
-          <span class="{% if page.banner.highlight == true %} highlight {% endif %} {{page.banner.highlight }} text-15 editable">Handmade soy candles in Melbourne.</span></h1>
+          <span class="{% if page.banner.highlight == true %} highlight {% endif %} {{page.banner.highlight }} text-15 editable padded-05">Ecofriendly commercial cleaning in Adelaide </span></h1>
           <a href="{{page.banner.banner-button-link }}" class="{{page.banner.button }}"> {{page.banner.banner-button-title }} </a>
       </div>
 </header>
@@ -145,7 +147,7 @@ sign-up:
 
 <section class="padded center padded-t-lg" id="{{site.data.navigation.quick-links.link-3.id }}">
     <h2 class="editable">
-        Collections
+        Services
     </h2>
 
     <div class="grid padded-1">
@@ -216,13 +218,9 @@ sign-up:
 
 {% include special-offer.html %}
 
-<!--------------------  SHOP MEALS -------------------->
-
-{% include shopify.html %}
-
 <!--------------------  WHY PERUVIAN BOWLS -------------------->
 
-<section class="grid padded padded-l-0 padded-tb sm-padded">
+<section class="grid padded padded-l-0 padded-tb sm-padded white-text">
   <div class="bg-image col-7_sm-12 tall-70 tall-50-sm" style="background-image:url('{{ page.why-us.background_image }}')">
   </div>
   <div class="col-5_sm-12-middle relative">
