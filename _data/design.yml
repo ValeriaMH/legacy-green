@@ -1,24 +1,24 @@
 text_colors:
   dark-text_color: '#000000'
-  semi-dark-text_color: '#8f8277'
-  grey-text_color: '#b6b3a5'
-  warm-text_color: '#efebea'
-  accent-text_color: '#daaf64'
-  featured-text_color: '#daaf64'
+  semi-dark-text_color: '#107B76'
+  grey-text_color: '#585857'
+  warm-text_color: '#C1A7B0'
+  accent-text_color: '#95C121'
+  featured-text_color: '#F7B944'
   white-text_color: '#ffffff'
 background_colors:
   dark-background_color: '#000000'
-  semi-dark-background_color: '#8f8277'
-  grey-background_color: '#b6b3a5'
-  warm-background_color: '#efebea'
-  accent-background_color: '#daaf64'
+  semi-dark-background_color: '#107B76'
+  grey-background_color: '#585857'
+  warm-background_color: '#C1A7B0'
+  accent-background_color: '#95C121'
   light-accent-background_color: '#efc98b'
-  featured-background_color: '#daaf64'
+  featured-background_color: '#F7B944'
   light-featured-background_color: '#cbc5be'
   light-background_color: '#ffffff'
   white-background_color: '#ffffff'
 body:
-  body-font-family: "'verdigris-mvb-pro-big', serif"
+  body-font-family: "'Livvic', sans-serif;"
   body-line-height: '1.1'
   body-heading-size: '2rem'
   body-sub-heading-size: '1.8rem'
@@ -63,9 +63,9 @@ special-text:
   medium-heading-text-size: '2.8rem'
   medium-heading-text-weight: '400'
   big-text-size: '1.5rem'
-  story-team-font-family: "'verdigris-mvb-pro-big', serif"
+  story-team-font-family: "'Livvic', sans-serif;"
   story-team-text-size: '3.5rem'
-  number-font-family: "'verdigris-mvb-pro-big', serif"
+  number-font-family: "'Livvic', sans-serif;"
   number-text-size: '2.7rem'
 testimonial:
   card_color: '#ffffff'
