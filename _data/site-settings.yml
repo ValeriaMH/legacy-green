@@ -4,7 +4,11 @@ general:
   menu-logo_image: /images/candle-web13.png
   form-email:
 technical:
-  fonts-embed: <link rel="stylesheet" href="https://use.typekit.net/aaf7cmp.css">
+  fonts-embed: >-
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <link
+    rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <link
+    href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   google-analytics-embed:
   shopify-button-embed: >-
     <div id='collection-component-1631698599484'></div> <script
