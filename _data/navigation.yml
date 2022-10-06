@@ -4,10 +4,10 @@ menu:
     url: /index
   link-2: 
     name: Services
-    url: /collections
+    url: /services
   link-3: 
     name: Why choose us
-    url: /delivery
+    url: /why-choose-us
   link-4: 
     name: About us
     url: /about
