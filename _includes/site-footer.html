@@ -1,7 +1,7 @@
 <footer class="grid-top padded padded-b-0 sm-text-center">
     <!-- column -->
     <div class="col-3_sm-12 padded-1">
-      <h2 class="logo editable"> Candles & Co. </h2>
+      <h2 class="logo editable"> Legacy Green Cleaning Services </h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
     <div class="col-1 sm-hidden"> <!-- empty filler --> </div>
@@ -33,18 +33,20 @@
     <div class="col-2_sm-4_xs-12 padded-1 sm-inline">
       <h4 class="editable"> Connect </h4>
       <nav>
-        {% if site.data.navigation.social.instagram == true %}
-
-            <a href="{{ site.data.site-settings.social.instagram_url }}">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            {% endif %}
+            
 
             {% if site.data.navigation.social.facebook == true %}
 
             <a href="{{ site.data.site-settings.social.facebook_url }}">
                 <i class="fab fa-facebook"></i>
+            </a>
+
+            {% endif %}
+
+            {% if site.data.navigation.social.instagram == true %}
+
+            <a href="{{ site.data.site-settings.social.instagram_url }}">
+                <i class="fab fa-instagram"></i>
             </a>
 
             {% endif %}
@@ -84,11 +86,11 @@
     </div>
 
     <div class="col-12 center padded-sm padded-b-05">
-        <p class="subtitle-2 margin-b-0"> Website Template by
+        <p class="subtitle-2 margin-b-0"> Website by
             <a href="https://www.picaronstudio.com"> Picaron Studio
             </a>
         </p>
-        <p class="subtitle-2"> Copyright 2021</p>
+        <p class="subtitle-2"> Copyright 2022</p>
     </div>
 
     {% include cookie-banner.html %}

@@ -18,9 +18,9 @@ social:
   instagram: true
   facebook: true
   youtube: false
-  pinterest: true
+  pinterest: false
   twitter: false
-  tik-tok: false
+  tik-tok: true
 quick-links:
   link-1:
     name: Shop Now
