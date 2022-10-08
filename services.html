@@ -21,13 +21,13 @@ banner:
   column-size: col-12
   text-align: center
   main-content: Our Services
-  sub-content: there is always a candle for you
+  sub-content: Make your workplace environment healthier
   highlighted-content: Delivery takes from 2 to 5 days
   main-text: white-text
   sub-text: white-text
   block-position: grid-left
   highlight: true
-  highlight-background: bg-grey
+  highlight-background: bg-accent
 special-banner: true
 special-offer:
   background: bg-warm
@@ -48,6 +48,60 @@ services:
   description: We offer connections to two highly recognised and professional Migration Agencies that can help and support you to choose the best options and advice to pursue Permanent residency in Australia if this is what you are looking for.
   url: /contact
   image: /images/metaustralia-9.jpg
+first-section:
+- column-size: col-3_sm-12
+  background_image: /images/candle-web4.jpeg
+  hover-title: Common areas
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/candle-web2.webp
+  hover-title: Toilets
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/candle-web6.jpeg
+  hover-title: Vacuuming
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/candle-web1.jpg
+  hover-title: Dusting
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/candle-web1.jpg
+  hover-title: Moping
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/candle-web1.jpg
+  hover-title: Deep clean washrooms
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/candle-web1.jpg
+  hover-title: Showers
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/candle-web1.jpg
+  hover-title: Kitchen appliances
+  title:
+  description:
+steps:
+- column-size: col-4_sm-12
+  number: 1
+  title: Contact us
+  description: contact us through our contact number, email, or through our Instagram, and schedule a free consultation.
+- column-size: col-4_sm-12
+  number: 2
+  title: We make a visit to your office 
+  description: We make a visit to your workplace, we make a proposal for a cleaning routine at the place of work to reach a mutual agreement.
+- column-size: col-4_sm-12
+  number: 3
+  title: Become more environmentally friendly 
+  description: We'll make an assessment of the spaces and we will make a proposal for a cleaning routine, recycling bins points, collection of recycled batteries, and help our clients create a healthier place.
 testimonial-section: false
 testimonial:
   button: button-inverted
@@ -114,6 +168,53 @@ sign-up:
   </div>
 
 </section> 
+
+<!-- WHAT WE CAN DO -->
+
+<section class="padded center" id="{{site.data.navigation.quick-links.link-3.id }}">
+  <h2 class="editable">
+      This is what we can do for your office
+  </h2>
+
+  <div class="grid padded-1">
+
+    {% for item in page.first-section %}
+      <div class="{{item.column-size }} padded-1">
+          <div class="hover-container" style="background-image:url('{{ item.background_image }}')">
+          <div class="hover-overlay">
+              <div class="hover-inner">
+                  <h3> {{item.hover-title }} </h3>
+              </div>
+          </div>
+          </div>
+          <div class="padded">
+              <h4>{{item.title }} </h4>
+              <p>{{item.description }}</p>
+          </div>
+      </div>
+
+      {% endfor %}
+      
+    
+  </div>
+</section>
+
+<!-- DELIVERY STEPS  -->
+
+<section class="padded center padded-t-0">
+  <h2 class="editable"> How to acquire our service? </h2>
+  <div class="grid padded-1">
+
+    {% for item in page.steps %}
+    <div class="{{item.column-size }} padded-2">
+      <span class="number-text"> {{item.number }} </span>
+      <h4> {{item.title }}  </h4>
+      <p> {{item.description }} </p>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
 
 <!--------------------  BANNER DISCOUNT -------------------->
 
