@@ -336,6 +336,33 @@ margin-bottom: 2rem;
 box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2);
 }
 
+/* Card Styles */
+
+.card-services {
+  color: var(--white-text);
+  background-color: var(--semi-dark-background); 
+  border-radius: 0px;
+  position: relative;
+  top: 0;
+  transition: top 0.5s;
+}
+
+
+.card-services h4 {
+  font-family: var(--headings-font-family);
+  color: var(--blue);
+  /* letter-spacing: .09em; */
+}
+
+.card-services p {
+  font-weight: 300;
+}
+
+.card-services:hover {
+  box-shadow: 0 2px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  top: -5px;
+}
+
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
 a.bg-image { display: block;}

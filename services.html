@@ -20,7 +20,7 @@ banner:
   small-devices-tall: tall-40-sm
   column-size: col-12
   text-align: center
-  main-content: Candle Collections
+  main-content: Our Services
   sub-content: there is always a candle for you
   highlighted-content: Delivery takes from 2 to 5 days
   main-text: white-text
@@ -33,23 +33,27 @@ special-offer:
   background: bg-warm
   main-text: dark-text
   sub-text: dark-text
-collections:
-  collection-1-name: Spring Collection
-  collection-1-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque eos quisquam porro, sint cum, atque, accusantium repellendus perferendis corrupti laudantium deserunt esse soluta tempora ea nihil sapiente consequuntur magni!
-  collection-2-name: White Collection
-  collection-2-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque eos quisquam porro, sint cum, atque, accusantium repellendus perferendis corrupti laudantium deserunt esse soluta tempora ea nihil sapiente consequuntur magni!
-  collection-3-name: Love Collection
-  collection-3-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque eos quisquam porro, sint cum, atque, accusantium repellendus perferendis corrupti laudantium deserunt esse soluta tempora ea nihil sapiente consequuntur magni!
-  collection-4-name:
-  collection-4-description:
-  collection-5-name:
-  collection-5-description:
+  button: button-special
+  button-title: Contact us
+services-section:
+  title: Our Services
+  description: Study or migrate to Australia
+  slider-name: Slide to the right
+services:
+- title: Eco-friendly Commercial Cleaning
+  description: We offer a wide range of options to all students based on their goals and preferences. We work with highly known and well-established Colleges in Australia.
+  url: /contact
+  image: /images/metaustralia-7.jpg
+- title: High-quality Cleaning Services
+  description: We offer connections to two highly recognised and professional Migration Agencies that can help and support you to choose the best options and advice to pursue Permanent residency in Australia if this is what you are looking for.
+  url: /contact
+  image: /images/metaustralia-9.jpg
 testimonial-section: false
 testimonial:
   button: button-inverted
 faq: false
 banner-faq_image: /images/demo-web1.jpg
-sign-up-banner: true
+sign-up-banner: false
 sign-up:
   background: bg-featured
   main-text: dark-text
@@ -75,13 +79,45 @@ sign-up:
       </div>
   </section>
 
+<!-- SERVICES -->
+
+<section class="padded sm-padded-b-lg sm-padded-t-lg">
+
+  <div class="grid services">
+
+    <div class="col-12 padded-sm padded-b-0">
+      <div class="padded-t-2 show-md xs-padded-t-1">
+        <span class="blue-text">{{page.services-section.slider-name }}<span class="margin-l-1 accent-text">&#x276F;</span><span>&#x276F;</span><span class="accent-text">&#x276F;</span></span>
+      </div>
+    </div>
+    
+    <div class="col-12 grid-equalHeight padded-sm horizontal-scroll">
+
+      {% for item in page.services limit:5 %}
+      <div class="col-6_md-5_sm-8_xs-11 padded-1">
+        
+          <div class="card-services">
+            <a href="{{item.url }}">
+              <div class="bg-image landscape bg-radius-services" style="background-image: url('{{ item.image }}');"></div>
+              <div class="padded-lg">
+                  <h4>{{item.title }}</h4>
+                  <p>{{item.description }}</p>
+              </div>
+            </a>
+          </div>
+
+      </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</section> 
+
 <!--------------------  BANNER DISCOUNT -------------------->
 
 {% include special-offer.html %}
-  
- <!--------------------  SHOP MEALS -------------------->
-
-{% include shopify-collections.html %}
 
 <!--------------------  TESTIMONIAL SECTION -------------------->
     
