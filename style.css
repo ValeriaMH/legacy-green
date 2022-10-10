@@ -1000,7 +1000,7 @@ cursor: pointer;
 }
 .accordion dd {
 padding: 0.5rem;
-background-color: var(--warm-background);
+background-color: var(--accent-background);
 }
 
 /* Icon */
