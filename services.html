@@ -30,10 +30,10 @@ banner:
   highlight-background: bg-accent
 special-banner: true
 special-offer:
-  background: bg-warm
+  background: bg-featured
   main-text: dark-text
   sub-text: dark-text
-  button: button-special
+  button: button
   button-title: Contact us
 services-section:
   title: Our Services
@@ -41,11 +41,11 @@ services-section:
   slider-name: Slide to the right
 services:
 - title: Eco-friendly Commercial Cleaning
-  description: We offer a wide range of options to all students based on their goals and preferences. We work with highly known and well-established Colleges in Australia.
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores similique consectetur provident rem id repellat, modi aliquid labore accusamus dicta praesentium. Dolorem eius, culpa quos maiores sit odio at accusamus!
   url: /contact
   image: /images/legacy-green-cleaning14.jpg
 - title: High-quality Cleaning Services
-  description: We offer connections to two highly recognised and professional Migration Agencies that can help and support you to choose the best options and advice to pursue Permanent residency in Australia if this is what you are looking for.
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores similique consectetur provident rem id repellat, modi aliquid labore accusamus dicta praesentium. Dolorem eius, culpa quos maiores sit odio at accusamus!
   url: /contact
   image: /images/legacy-green12.jpg
 first-section:
@@ -123,18 +123,17 @@ sign-up:
     {% include header-nav-index.html %}
 
       <div class="{{page.banner.column-size }} {{page.banner.text-align }} padded">
-        <h3>
-          <span class="big-bold {{page.banner.main-text }} editable"> {{page.banner.main-content }} </span> <br />
-          <span class="medium-bold {{page.banner.sub-text }} editable"> {{page.banner.sub-content }}. </span> <br />
-        </h3>
-        <h1 class="padded-b-1"> 
-          <span class="{% if page.banner.highlight == true %} highlight {% endif %} {{page.banner.highlight-background }} text-15 editable">{{page.banner.highlighted-content }}</span></h1>
+        <h1 class="big-bold {{page.banner.main-text }} editable">
+          {{page.banner.main-content }} 
+        </h1>
+        <h2 class="medium-bold {{page.banner.sub-text }} editable"> {{page.banner.sub-content }}</h2>
+        <!-- <h1 class="padded-b-1"> 
+          <span class="{% if page.banner.highlight == true %} highlight {% endif %} {{page.banner.highlight-background }} text-15 editable">{{page.banner.highlighted-content }}</span></h1> -->
         <a href="/#order" class="{{page.banner.button }} editable"> {{page.banner.button-text }} </a>
       </div>
   </section>
 
 <!-- SERVICES -->
-
 <section class="padded sm-padded-b-lg sm-padded-t-lg">
 
   <div class="grid services">
