@@ -1,6 +1,6 @@
 general:
   logo_image: /images/legacy-green-logo.png
-  logo-max-width: 70%
+  logo-max-width: 100%
   menu-logo_image: /images/legacy-green-logo.png
   form-email:
 technical:
