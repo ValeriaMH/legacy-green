@@ -217,6 +217,14 @@ background-image: url('/images/demo-web6.jpg');
 max-width: var(--logo-max-width);
 }
 
+.tree img {
+  max-width: 45%;
+  height: auto;
+  position: absolute;
+  left: -22vh;
+  bottom: -5%;
+}
+
 .img-1 {
 margin-top: -10rem;
 margin-left: 8rem;
@@ -482,6 +490,10 @@ margin-bottom: 1rem;
 .subtitle       { 
 font-size: 0.9rem;
 text-align: right;
+}
+
+.regular-weight {
+  font-weight: 500;
 }
 
 .subtitle-2 {
