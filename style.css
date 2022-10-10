@@ -1165,8 +1165,8 @@ left: 0;
 right: 0;
 bottom: 0;
 width: 100%;
-background: #222;
-color: rgba(255,255,255,0.8);
+background: var(--grey-background);
+color: var(--white-text);
 }
 #cookie-notice a {
 display: inline-block;
