@@ -44,24 +44,50 @@ $('.testimonial-slider-container').slick({
     
   });
 
-// Why Us Slider
+// Testimonial Slider
 
-$('.whyus-slider-container').slick({
+$('.college-slider-container').slick({
   
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 500,
-    arrows: false,
-    accesibility: true,
-    dots: true,
-    fade: false,
-    infinite: true,
-    pauseOnHover: true,
-    pauseOnDotsHover: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
-    
-  });
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 500,
+  arrows: true,
+  accesibility: true,
+  dots: false,
+  fade: false,
+  infinite: true,
+  pauseOnHover: true,
+  pauseOnDotsHover: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  
+});
 
   // Accordion FAQ
 

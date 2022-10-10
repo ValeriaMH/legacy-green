@@ -598,7 +598,24 @@ color: var(--dark-text);
 color: var(--dark-text);
 }
 
+/* SLIDER ICONS */
 
+.why-legacy img {
+  width: 55%;
+  height: auto;
+  text-align: center;
+}
+
+#why-legacy {
+  padding: 1rem 5% 1rem 9%;
+}
+
+.why-legacy h5 {
+  font-weight: 400;
+  color: var(--white-text);
+  font-size: 1.1rem;
+  padding: .5rem;
+}
 
 /* .gallery [class*="col-"] {
 padding: 0; 
@@ -1345,6 +1362,7 @@ vertical-align: top;
 .slider-container {
   /*   border: 2px solid lightblue; */
     padding-top: 1%;
+    display: flex;
   }
 
 .slider-item {

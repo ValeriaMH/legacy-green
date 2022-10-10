@@ -89,6 +89,22 @@ first-section:
   hover-title: Kitchen appliances
   title:
   description:
+why-legacy:
+- image: /images/legacy-green-icon1.png
+  image-alt:
+  title: Nontoxic cleaning products
+- image: /images/legacy-green-icon2.png
+  image-alt:
+  title: Healthier working environment
+- image: /images/legacy-green-icon3.png
+  image-alt:
+  title: Professional Cleaners
+- image: /images/legacy-green-icon4.png
+  image-alt:
+  title: HEPA filter vacuum cleaners
+- image: /images/legacy-green-icon5.png
+  image-alt:
+  title: Hygienic microfiber cloths and mops
 steps:
 - column-size: col-4_sm-12
   number: 1
@@ -196,6 +212,39 @@ sign-up:
       
     
   </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="padded-b-lg">
+
+  <div class="grid bg-semi-dark why-legacy" id="why-legacy">
+
+      <div class="col-12 center padded padded-b-1 sm-padded-t-lg">
+
+          <h3>{{page.college-partners-title }}</h3>
+
+      </div>
+
+      <div class="col-12 college-slider-container grid" id="college">
+
+          <!-----------------SLIDE--------------->
+          {% for item in page.why-legacy %}
+          <div class="col-3_sm-5_xs-11 center">
+            <div class="slider-item">
+                <img src="{{item.image }}" alt="{{item.image-alt }}">
+                <h5>{{item.title }}</h5>
+            </div>
+          </div>
+          {% endfor %}
+
+      </div>
+
+      <div class="col-12 center padded-b-2">
+        <a class="btn-subtle btn-subtle-white margin-t-2" href="{{page.college-partners-cta-url }}">{{page.college-partners-cta-name }}</a><a href=""><i class="margin-l-1 btn-arrow fas fa-arrow-right"></i></a>
+      </div>
+
+  </div>
+
 </section>
 
 <!-- DELIVERY STEPS  -->
