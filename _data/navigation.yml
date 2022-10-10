@@ -23,19 +23,19 @@ social:
   tik-tok: true
 quick-links:
   link-1:
-    name: Shop Now
+    name: Acquire our services
     url: /index/#order
     id: order
   link-2: 
-    name: Best Sellers
+    name: Why go green
     url: /index/#meals
     id: meals
   link-3: 
-    name: Collections
+    name: Our story
     url: /index/#how
     id: how
   link-4: 
-    name: Our Process
+    name: Our Values
     url: /about/#peru
     id: peru
 explore-menu:
