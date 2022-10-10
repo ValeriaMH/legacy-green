@@ -510,93 +510,108 @@ z-index: 2;
 position: absolute;
 left: 30%;
 }
-
-/* Slider */
-
-.quote-icon {
-font-size: 6rem;
-display: inline-block;
-line-height: 1;
-}
-
 /* Slider */
 
 .slider-item {
-padding: 1rem;
-display: none;
+  padding: 1rem;
+  display: none;
 }
 
 .slider-item:first-child {
-display: block;
-}
-
-.testimonial-slider-container {
-padding: 5%;
-max-width: 600px;
-margin: auto;
+  display: block;
 }
 
 .slider-container {
-/*   border: 2px solid lightblue; */
-  padding: 5%;
-}
-
-.whyus-slider-container {
-padding: 5%;
-max-width: 500px;
-margin: auto;
-}
+  /*   border: 2px solid lightblue; */
+    padding: 7% 7% 0 7%;
+  }
 
 .slick-next {
-right:3rem;
+  right:3rem;
+  top: 24%;
 }
 
 .slick-prev {
-left:3rem;
+  left:3rem;
+  top: 24%;
 }
 
 .slick-next::before, .slick-prev::before {
-  font-family: inherit;
-  font-size: 20px;
-  line-height: 1;
-  opacity: .75;
-  color: rgb(90,90,90);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(90,90,90);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots {
-left: 0;
+  left: 0;
 /* without this the padding of the parent affects the centering of the dots. Do not delete   */
-bottom: 10px;
+  bottom: 10px;
 }
 
 .slick-dots li,
 .slick-dots li button {
-width: 10px;
+  width: 0.5rem;
 }
 
 .slick-dots li button::before {
-color: var(--dark-text);
+  color: var(--pink);
+  font-size: 1rem;
 }
 
 .slick-dots li.slick-active button::before {
-color: var(--dark-text);
+  color: var(--pink);
 }
 
 .slick-dotted.slick-slider {
-margin-bottom: 0.2rem;
+  margin-bottom: 0rem;
 }
 
-/* Why Us Slider */
-
-.whyus-slider-container .slick-dots li button::before {
-color: var(--dark-text);
+.slick-slide {
+  text-align: center;
 }
 
-.whyus-slider-container .slick-dots li.slick-active button::before {
-color: var(--dark-text);
+.slider-container {
+  /*   border: 2px solid lightblue; */
+    padding-top: 1%;
+  }
+
+.slider-item {
+  padding: 0.5rem;
+  display: none;
 }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0rem;
+}
+
+.slider-container .slick-dots {
+  /* left: 0; */
+/* without this the padding of the parent affects the centering of the dots. Do not delete   */
+  bottom: -10px;
+}
+
+.slider-container .slick-dots li,
+.slider-container .slick-dots li button {
+width: 18px;
+}
+
+.slider-container .slick-dots li button::before {
+  color: var(--orange-text);
+  font-size: 0.5rem;
+}
+
+.slider-container .slick-dots li.slick-active button::before {
+  color: var(--orange-light);
+}
+
+#slider-icons {
+  align-items: center;
+}
+
 
 /* SLIDER ICONS */
 

@@ -25,35 +25,16 @@ AOS.init({
 
 
 
-// Testimonial Slider
+// Why Us Slider
 
-$('.testimonial-slider-container').slick({
-  
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 500,
-    arrows: false,
-    accesibility: true,
-    dots: true,
-    fade: false,
-    infinite: true,
-    pauseOnHover: true,
-    pauseOnDotsHover: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
-    
-  });
+$('.slider-container').slick({
 
-// Testimonial Slider
-
-$('.college-slider-container').slick({
-  
   autoplay: true,
   autoplaySpeed: 3000,
   speed: 500,
   arrows: true,
   accesibility: true,
-  dots: false,
+  dots: true,
   fade: false,
   infinite: true,
   pauseOnHover: true,
@@ -86,8 +67,9 @@ $('.college-slider-container').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
-  
+
 });
+
 
   // Accordion FAQ
 

@@ -215,36 +215,20 @@ sign-up:
 </section>
 
 <!-- WHY CHOOSE US -->
-<section class="padded-b-lg">
-
-  <div class="grid bg-semi-dark why-legacy" id="why-legacy">
-
-      <div class="col-12 center padded padded-b-1 sm-padded-t-lg">
-
-          <h3>{{page.college-partners-title }}</h3>
-
-      </div>
-
-      <div class="col-12 college-slider-container grid" id="college">
-
-          <!-----------------SLIDE--------------->
+<section class="grid padded-b-lg">
+  <div class="col-12 bg-semi-dark center why-legacy sm-padded-lg sm-padded-t-0 sm-padded-b-0">
+    <div class="slider-container">
+    <!-----------------SLIDE 1--------------->
+  
           {% for item in page.why-legacy %}
-          <div class="col-3_sm-5_xs-11 center">
-            <div class="slider-item">
-                <img src="{{item.image }}" alt="{{item.image-alt }}">
-                <h5>{{item.title }}</h5>
-            </div>
+          <div class="slider-item sm-text-center" id="slider-icons">
+              <img class="margin-b-05" src="{{item.image }}" alt="" />
+              <h5>{{item.title }}</h5>
           </div>
           {% endfor %}
-
-      </div>
-
-      <div class="col-12 center padded-b-2">
-        <a class="btn-subtle btn-subtle-white margin-t-2" href="{{page.college-partners-cta-url }}">{{page.college-partners-cta-name }}</a><a href=""><i class="margin-l-1 btn-arrow fas fa-arrow-right"></i></a>
-      </div>
-
+        
+    </div>
   </div>
-
 </section>
 
 <!-- DELIVERY STEPS  -->
