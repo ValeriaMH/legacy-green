@@ -30,7 +30,7 @@ menu:
   mobile-menu-text-size: '1.5rem'
   mobile-menu-text-weight: '400'
   nav-background_color: '#efebea'
-  nav-text_color: '#000000'
+  nav-text_color: '#ffffff'
 footer:
   footer-text_color: '#000000'
   footer-text-size: '0.9rem'
