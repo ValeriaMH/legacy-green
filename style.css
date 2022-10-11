@@ -632,6 +632,19 @@ width: 18px;
   padding: .5rem;
 }
 
+.why-us img {
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+
+.why-us h4 {
+  font-weight: 500;
+  color: var(--dark-text);
+  font-size: 1.2rem;
+  padding: .5rem;
+}
+
 /* .gallery [class*="col-"] {
 padding: 0; 
 } */
