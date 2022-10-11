@@ -41,6 +41,47 @@ steps:
     number: 3
     title: We take it your house
     description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+first-section:
+- column-size: col-3_sm-12
+  background_image: /images/legacy-green-services8.jpg
+  hover-title: Common areas
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/legacy-green-services7.jpg
+  hover-title: Toilets
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/legacy-green-services5.jpg
+  hover-title: Vacuuming
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/legacy-green-services4.jpg
+  hover-title: Dusting
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/legacy-green-services3.jpg
+  hover-title: Moping
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/legacy-green-cleaning4.jpg
+  hover-title: Deep clean washrooms
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/legacy-green-services2.jpg
+  hover-title: Showers
+  title:
+  description:
+- column-size: col-3_sm-12
+  background_image: /images/legacy-green-services1.jpg
+  hover-title: Kitchen appliances
+  title:
+  description:
 banner-2:
   banner_image: /images/candle-web5.jpeg
   image-position: bg-pos-b
@@ -78,20 +119,37 @@ sign-up:
   </section>
 
 
-<!-- DELIVERY STEPS  -->
+<!--------------------  FIRST SECTION -------------------->
 
-<section class="padded center">
-  <h2 class="editable"> How Delivery Works </h2>
+<section class="padded center padded-t-lg" id="{{site.data.navigation.quick-links.link-3.id }}">
+  <h2 class="editable">
+      Our difference
+  </h2>
+
   <div class="grid padded-1">
 
-    {% for item in page.steps %}
-    <div class="{{item.column-size }} padded">
-      <span class="number-text"> {{item.number }} </span>
-      <h4> {{item.title }}  </h4>
-      <p> {{item.description }} </p>
-    </div>
-    {% endfor %}
+    {% for item in page.first-section %}
+      <div class="{{item.column-size }} padded-1">
+          <div class="hover-container" style="background-image:url('{{ item.background_image }}')">
+          <div class="hover-overlay">
+              <div class="hover-inner">
+                  <h3> {{item.hover-title }} </h3>
+              </div>
+          </div>
+          </div>
+          <div class="padded">
+              <h4>{{item.title }} </h4>
+              <p>{{item.description }}</p>
+          </div>
+      </div>
 
+      {% endfor %}
+      
+      <div class="col-12 center">
+        <a href="{{page.first-section-button.first-button-link }}" class="{{page.first-section-button.button }}">
+          {{page.first-section-button.first-button-title }} </a>
+      </div>
+      
   </div>
 </section>
 
