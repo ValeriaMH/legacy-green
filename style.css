@@ -917,7 +917,7 @@ color: var(--accent-text);
 }
 
 .social-menu-explore a {
-color: inherit;
+color: var(--white-text);
 font-size: 1.5rem;
 text-decoration: none;
 margin-right: 1rem;
@@ -929,8 +929,8 @@ margin-right: 0;
 padding-right: 0;
 }
 
-.social-menu-explore a:hover {
-color: var(--orange);
+nav.social-menu-explore a:hover {
+color: var(--accent-text);
 }
 
 .explore {
