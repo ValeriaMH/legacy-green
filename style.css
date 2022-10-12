@@ -648,6 +648,16 @@ width: 18px;
   padding: .5rem;
 }
 
+.go-green i {
+  color: var(--semi-dark-text);
+  font-size: 2.2rem;
+}
+
+.go-green h3 {
+  color: var(--semi-dark-text);
+  font-size: 2rem;
+}
+
 /* .gallery [class*="col-"] {
 padding: 0; 
 } */
@@ -767,6 +777,14 @@ nav a {
 nav a:hover {
 color: var(--accent-text);
 }
+
+nav.dark-links a {
+  color: var(--dark-text);
+}
+
+nav.dark-links a:hover {
+  color: var(--accent-text);
+  }
 
 .hamburger {
 position: fixed;
