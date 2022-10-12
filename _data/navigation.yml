@@ -24,19 +24,19 @@ social:
 quick-links:
   link-1:
     name: Acquire our services
-    url: /index/#order
+    url: /services#acquire
     id: order
   link-2: 
     name: Why go green
-    url: /index/#meals
+    url: /why-choose-us#go-green
     id: meals
   link-3: 
     name: Our story
-    url: /index/#how
+    url: /about
     id: how
   link-4: 
     name: Our Values
-    url: /about/#peru
+    url: /about#values
     id: peru
 explore-menu:
 - name: Order here
