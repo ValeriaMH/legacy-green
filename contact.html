@@ -28,10 +28,11 @@ banner:
 contact:
   email-link: legacygreen.sm@gmail.com
   email: legacygreen.sm@gmail.com
-  tel-link: +61406524383
-  tel: 0406 524 383
+  whatsapp_url: +61406524383
+  whatsapp-title: 0406 524 383
+  instagram_url:
+  instagram: '@legacygreen.au'
   button: button
-  map: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14263.20061197455!2d153.0871569!3d-26.6548804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6911dd4089163c6c!2sThe%20Sunny%20Coast%20Flower%20Bar!5e0!3m2!1sen!2sau!4v1638938556442!5m2!1sen!2sau
 testimonial-section: false
 testimonial:
   button: button-inverted
@@ -65,9 +66,11 @@ sign-up:
 
     <div class="col-6_sm-12 padded">
       <h2 class="editable"> Contact us </h2>
-      <p class="editable"> Get a free assestment</p>
-      <p class="editable"> <strong> Email: </strong> <a href="mailto:{{page.contact.email-link }}" class="subtle-button2">{{page.contact.email }}</a> </p>
-      <p class="editable"> <strong> Phone: </strong> <a href="tel:{{page.contact.tel-link }}" class="subtle-button2">{{page.contact.tel }}</a></p>
+      <p class="editable"> To request a free quote or workplace assestment, please fill out the form or contact us below.</p>
+      <p class="editable"><strong>Whatsapp:</strong> <a href="{{page.contact.whatsapp_url }}">{{page.contact.whatsapp-title }}</a></p>
+      <p class="editable"><strong>Send us an email at:</strong> <a href="mailto:{{{page.contact.email-link }}">{{page.contact.email }}</a></p>
+      <p class="editable"><strong>Send us a DM on Instagram:</strong> <a href="{{page.contact.instagram_url }}">{{page.contact.instagram }}</a></p>
+      <!-- <p class="editable"><strong>Location:</strong> We are based in Adelaide, but we offer delivery to all Australia.</p> -->
     </div>
     <div class="col-6_sm-12-middle padded">
       <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
