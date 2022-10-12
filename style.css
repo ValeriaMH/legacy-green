@@ -658,6 +658,16 @@ width: 18px;
   font-size: 2rem;
 }
 
+.values i {
+  color: var(--semi-dark-text);
+  font-size: 2.2rem;
+}
+
+.experience h4 {
+  font-weight: 500;
+  line-height: 1.3;
+}
+
 /* .gallery [class*="col-"] {
 padding: 0; 
 } */
