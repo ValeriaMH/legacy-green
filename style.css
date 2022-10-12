@@ -66,6 +66,7 @@ position: relative;
 .padded-l-lg  { padding-left: 10%; }
 .padded-l-xlg { padding-left: 15%; }
 .padded-r     { padding-right: 5%; }
+.padded-r-lg     { padding-right: 10%; }
 
 .padded-tb      { padding-top: 5%; padding-bottom: 5%; }
 .padded-lr      { padding-left: 5%; padding-right: 5%; }
@@ -391,6 +392,8 @@ a.bg-image { display: block;}
 .bg-pos-l { background-position: left; }
 .bg-pos-r { background-position: right; }
 .bg-pos-c { background-position: center; }
+
+.bg-pos-c2 { background-position: 50% 40%; }
 
 /* ------------ Typography Styles ----------------------- */
 

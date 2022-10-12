@@ -14,8 +14,8 @@ bar:
 menu:
   button-style: false
 banner:
-  banner_image: /images/legacy-green7.jpg
-  image-position: bg-pos-c
+  banner_image: /images/legacy-green-cleaning3.jpg
+  image-position: bg-pos-c2
   banner-tall: tall-70
   small-devices-tall: tall-50-sm
   column-size: col-5_sm-12
@@ -28,19 +28,6 @@ banner:
   button: button-inverted
   button-title: Order now
   button-link: /shop
-steps:
-  - column-size: col-4_sm-12
-    number: 1
-    title: Choose your candles
-    description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  - column-size: col-4_sm-12
-    number: 2
-    title: Choose a delivery option
-    description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  - column-size: col-4_sm-12
-    number: 3
-    title: We take it your house
-    description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 first-section:
 - column-size: col-4_sm-12
   image: /images/legacy-green-icon1.png
@@ -62,6 +49,14 @@ first-section:
   image: /images/legacy-green-icon5.png
   title: Hygienic microfiber cloths and mops
   description:
+why-us_image: /images/legacy-green-cleaning6.jpg
+why-us:
+- title: More than 20 years of experience
+  description: Our more than 20 years of experience in DWF gives us the confidence to offer the best service and the best materials so that our work lasts for many years.
+- title: Family owned business and operated
+  description: We built this business with a focus on integrity and professionalism, which is reflected in the testimonials of our clients. For us there is no big or small project, we will always apply all our expertise and skills to give the best result.
+- title: Get a free report
+  description: Don't let years paying insurance premiums go to waste it's time to get paid from your roof. Set up appointment for a free report.
 banner-2:
   banner_image: /images/candle-web5.jpeg
   image-position: bg-pos-b
@@ -127,6 +122,40 @@ sign-up:
       </div>
       
   </div>
+</section>
+
+<!--------------------  WHY GO GREEN -------------------->
+<section>
+
+  <div class="grid-middle flex-wrap-sm">
+
+    <div class="col-6_sm-11 padded-t-md padded-r relative sm-padded-t-0 sm-padded-b-lg">
+      <div class="bg-image square bg-radius-why" style="background-image: url('{{ page.why-us_image }}')"></div>
+    </div>
+
+    <div class="col-6_sm-12 grid">
+
+      <div class="col-12 padded-b-lg">
+        <h3>Why go green?</h3>
+      </div>
+
+      {% for item in page.why-us %}
+        <div class="col-1">
+          <i class="fas fa-caret-right margin-r-1"></i>
+        </div>
+        <div class="col-11 padded-b-1 padded-r-lg">
+          <h4>{{item.title }}</h4>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-11 padded-b padded-r-lg">
+          <p>{{item.description }}</p>
+        </div>
+      {% endfor %}
+      
+    </div>
+
+  </div>
+
 </section>
 
 <!--------------------  BG IMAGE -------------------->
