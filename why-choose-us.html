@@ -62,6 +62,13 @@ banner-2:
   image-position: bg-pos-b
   banner-tall: tall-80
   small-devices-tall: tall-50-md
+special-banner: true
+special-offer:
+  background: bg-featured
+  main-text: dark-text
+  sub-text: dark-text
+  button: button
+  button-title: Contact us
 testimonial-section: false
 testimonial:
   button: button-inverted
@@ -160,9 +167,11 @@ sign-up:
 
 <!--------------------  BG IMAGE -------------------->
 
-<section class="bg-image grid-center {{page.banner-2.image-position }} {{page.banner-2.banner-tall }} {{page.banner-2.small-devices-tall }}" style="background-image:url('{{ page.banner-2.banner_image }}')">
+<!-- <section class="bg-image grid-center {{page.banner-2.image-position }} {{page.banner-2.banner-tall }} {{page.banner-2.small-devices-tall }}" style="background-image:url('{{ page.banner-2.banner_image }}')">
   
-</section>  
+</section>   -->
+
+{% include special-offer.html %}
 
 <!--------------------  TESTIMONIAL SECTION -------------------->
     
