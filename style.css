@@ -1295,6 +1295,8 @@ vertical-align: top;
 .show-md { display: block; }
 .hide-md { display: none;  }
 
+.md-padded-0    { padding: 0; }
+
 .horizontal-scroll {
   overflow-x: auto;
   flex-wrap: nowrap;
@@ -1312,6 +1314,18 @@ vertical-align: top;
 
  .fixed {
   background-attachment: unset;
+  }
+
+  .bg-over {
+    left: -10%;
+  }
+
+  .can-do h3 {
+    font-size: 1.3rem;
+  }
+
+  #acquire h4 {
+    font-size: 1.3rem;
   }
 
 
@@ -1502,6 +1516,8 @@ width: 18px;
   .margin-fixed {
     margin-top: 29%;
    }
+
+  
 
 }
 

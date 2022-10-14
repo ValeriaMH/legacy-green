@@ -18,7 +18,7 @@ banner:
   image-position: Top
   banner-tall: tall-100
   small-devices-tall: tall-60-sm
-  column-size: col-8_sm-12
+  column-size: col-8_md-10_sm-12
   text-align: left
   main-text: white-text
   sub-text: white-text
@@ -27,42 +27,42 @@ banner:
   banner-button-title: Contact us
   banner-button-link: /contact
 first-section:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services8.jpg
   hover-title: Common areas
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services7.jpg
   hover-title: Toilets
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services5.jpg
   hover-title: Vacuuming
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services4.jpg
   hover-title: Dusting
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services3.jpg
   hover-title: Moping
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-cleaning4.jpg
   hover-title: Deep clean washrooms
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services2.jpg
   hover-title: Showers
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services1.jpg
   hover-title: Kitchen appliances
   title:
@@ -155,7 +155,7 @@ sign-up:
         This is what we can do for your office
     </h2>
 
-    <div class="grid padded-1">
+    <div class="grid padded-1 horizontal-scroll">
 
       {% for item in page.first-section %}
         <div class="{{item.column-size }} padded-1">
@@ -223,12 +223,12 @@ sign-up:
 
 {% include special-offer.html %}
 
-<!--------------------  WHY PERUVIAN BOWLS -------------------->
+<!--------------------  WHY US -------------------->
 
 <section class="grid padded padded-l-0 padded-t-lg sm-padded white-text">
-  <div class="bg-image col-7_sm-12 tall-80 tall-50-sm" style="background-image:url('{{ page.why-us.background_image }}')">
+  <div class="bg-image col-7_md-6_sm-12 tall-80 tall-50-sm" style="background-image:url('{{ page.why-us.background_image }}')">
   </div>
-  <div class="col-5_sm-12-middle relative">
+  <div class="col-5_md-6_sm-12-middle relative">
     <div class="bg-why-over {{ page.why-us.background }} bg-over">
         <h2 class="big-bold editable">
             Our Story

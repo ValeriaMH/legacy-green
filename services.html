@@ -49,42 +49,42 @@ services:
   url: /contact
   image: /images/legacy-green12.jpg
 first-section:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services8.jpg
   hover-title: Common areas
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services7.jpg
   hover-title: Toilets
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services5.jpg
   hover-title: Vacuuming
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services4.jpg
   hover-title: Dusting
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services3.jpg
   hover-title: Moping
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-cleaning4.jpg
   hover-title: Deep clean washrooms
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services2.jpg
   hover-title: Showers
   title:
   description:
-- column-size: col-3_sm-12
+- column-size: col-3_sm-11
   background_image: /images/legacy-green-services1.jpg
   hover-title: Kitchen appliances
   title:
@@ -163,7 +163,7 @@ sign-up:
     <div class="col-12 grid-equalHeight padded-sm horizontal-scroll">
 
       {% for item in page.services limit:5 %}
-      <div class="col-6_md-5_sm-8_xs-11 padded-1">
+      <div class="col-6_sm-8_xs-11 padded-1">
         
           <div class="card-services">
             <a href="{{item.url }}">
@@ -186,18 +186,18 @@ sign-up:
 
 <!-- WHAT WE CAN DO -->
 
-<section class="padded center" id="{{site.data.navigation.quick-links.link-3.id }}">
+<section class="padded center can-do" id="{{site.data.navigation.quick-links.link-3.id }}">
   <h2 class="editable">
       This is what we can do for your workplace
   </h2>
 
-  <div class="grid padded-1">
+  <div class="grid padded-1 horizontal-scroll">
 
     {% for item in page.first-section %}
       <div class="{{item.column-size }} padded-1">
           <div class="hover-container" style="background-image:url('{{ item.background_image }}')">
           <div class="hover-overlay">
-              <div class="hover-inner">
+              <div class="hover-inner padded-1">
                   <h3> {{item.hover-title }} </h3>
               </div>
           </div>
@@ -235,7 +235,7 @@ sign-up:
 
 <section class="padded center padded-t-0" id="acquire">
   <h2 class="editable"> How to acquire our service? </h2>
-  <div class="grid padded-1">
+  <div class="grid padded-1 md-padded-0">
 
     {% for item in page.steps %}
     <div class="{{item.column-size }} padded-2">
