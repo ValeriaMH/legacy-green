@@ -1,8 +1,8 @@
 <div id="cookie-notice">
     <span>We would like to use third party cookies and scripts to improve the functionality of this website.</span>
     
-    <a href="/privacy-policy" class="button-subtle">More information</a>
-    <a id="cookie-notice-accept" class="button">Approve</a>
+    <a href="{{site.data.site-settings.technical.cookie-banner-cta-url }}" target="_blank" class="button-subtle">{{site.data.site-settings.technical.cookie-banner-cta-name }}</a>
+    <a id="cookie-notice-accept" class="button margin-t-05">{{site.data.site-settings.technical.cookie-banner-approve }}</a>
     <!-- Optional close button that declines the cookies -->
     <span id="close-cookie-banner"> &times; </span>
   </div>
@@ -32,6 +32,12 @@
     }
     if(readCookie('cookie-notice-dismissed')=='true') {
         // Add tracking scripts here 
+        // Google Analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{site.data.site-settings.technical.google-analytics-id }}');
         // End tracking scripts 
     } else {
         document.getElementById('cookie-notice').style.display = 'block';
