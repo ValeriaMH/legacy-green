@@ -1365,6 +1365,7 @@ vertical-align: top;
 .sm-padded-l-1 { padding-left: 1rem; }
 .sm-padded-l-0 { padding-left: 0rem; }
 .sm-padded-r-1 { padding-left: 1rem; }
+.sm-padded-r-0 { padding-left: 0rem; }
 .sm-padded-b-2 { padding-bottom: 2rem; }
 .sm-padded-b-5 { padding-bottom: 5rem; }
 
@@ -1501,6 +1502,16 @@ footer nav a {
   .tree img {
     left: -19.3vh;
     bottom: -40vh;
+  }
+
+  .why-us img {
+    width: 40%;
+    height: auto;
+    text-align: center;
+  }
+
+  #go-green {
+    padding: 5%;
   }
 
 }
