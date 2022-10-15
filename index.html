@@ -26,46 +26,48 @@ banner:
   button: button
   banner-button-title: Contact us
   banner-button-link: /contact
+first-section-text:
+  slider-name: Slide to the right
 first-section:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services8.jpg
   hover-title: Common areas
-  title:
+  title: Common areas
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services7.jpg
   hover-title: Toilets
-  title:
+  title: Toilets
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services5.jpg
   hover-title: Vacuuming
-  title:
+  title: Vacuuming
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services4.jpg
   hover-title: Dusting
-  title:
+  title: Dusting
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services3.jpg
   hover-title: Moping
-  title:
+  title: Moping
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-cleaning4.jpg
   hover-title: Deep clean washrooms
-  title:
+  title: Deep clean washrooms
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services2.jpg
   hover-title: Showers
-  title:
+  title: Showers
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services1.jpg
   hover-title: Kitchen appliances
-  title:
+  title: Kitchen appliances
   description:
 first-section-button:
   button: button-inverted
@@ -150,10 +152,16 @@ sign-up:
 
 <!--------------------  FIRST SECTION -------------------->
 
-<section class="padded center padded-t-lg" id="{{site.data.navigation.quick-links.link-3.id }}">
+<section class="padded center padded-t-lg can-do" id="{{site.data.navigation.quick-links.link-3.id }}">
     <h2 class="editable">
         This is what we can do for your office
     </h2>
+
+    <div class="col-12 padded-sm padded-b-0 left padded-l">
+      <div class="padded-t-2 show-md xs-padded-t-1">
+        <span class="blue-text">{{page.first-section-text.slider-name }}<span class="margin-l-1 accent-text">&#x276F;</span><span>&#x276F;</span><span class="accent-text">&#x276F;</span></span>
+      </div>
+    </div>
 
     <div class="grid padded-1 horizontal-scroll">
 
@@ -167,7 +175,7 @@ sign-up:
             </div>
             </div>
             <div class="padded">
-                <h4>{{item.title }} </h4>
+                <h4 class="show-md">{{item.title }} </h4>
                 <p>{{item.description }}</p>
             </div>
         </div>
@@ -225,7 +233,7 @@ sign-up:
 
 <!--------------------  WHY US -------------------->
 
-<section class="grid padded padded-l-0 padded-t-lg sm-padded white-text">
+<section class="grid padded padded-l-0 padded-t-lg sm-padded white-text sm-padded-t-lg">
   <div class="bg-image col-7_md-6_sm-12 tall-80 tall-50-sm" style="background-image:url('{{ page.why-us.background_image }}')">
   </div>
   <div class="col-5_md-6_sm-12-middle relative">

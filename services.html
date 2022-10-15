@@ -52,42 +52,42 @@ first-section:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services8.jpg
   hover-title: Common areas
-  title:
+  title: Common areas
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services7.jpg
   hover-title: Toilets
-  title:
+  title: Toilets
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services5.jpg
   hover-title: Vacuuming
-  title:
+  title: Vacuuming
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services4.jpg
   hover-title: Dusting
-  title:
+  title: Dusting
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services3.jpg
   hover-title: Moping
-  title:
+  title: Moping
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-cleaning4.jpg
   hover-title: Deep clean washrooms
-  title:
+  title: Deep clean washrooms
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services2.jpg
   hover-title: Showers
-  title:
+  title: Showers
   description:
 - column-size: col-3_sm-11
   background_image: /images/legacy-green-services1.jpg
   hover-title: Kitchen appliances
-  title:
+  title: Kitchen appliances
   description:
 why-legacy:
 - image: /images/legacy-green-icon1.png
@@ -191,6 +191,12 @@ sign-up:
       This is what we can do for your workplace
   </h2>
 
+  <div class="col-12 padded-sm padded-b-0 left padded-l">
+    <div class="padded-t-2 show-md xs-padded-t-1">
+      <span class="blue-text">{{page.services-section.slider-name }}<span class="margin-l-1 accent-text">&#x276F;</span><span>&#x276F;</span><span class="accent-text">&#x276F;</span></span>
+    </div>
+  </div>
+
   <div class="grid padded-1 horizontal-scroll">
 
     {% for item in page.first-section %}
@@ -203,7 +209,7 @@ sign-up:
           </div>
           </div>
           <div class="padded">
-              <h4>{{item.title }} </h4>
+              <h4 class="show-md">{{item.title }} </h4>
               <p>{{item.description }}</p>
           </div>
       </div>
@@ -216,7 +222,7 @@ sign-up:
 
 <!-- WHY CHOOSE US -->
 <section class="grid padded-b-lg">
-  <div class="col-12 bg-semi-dark center why-legacy sm-padded-lg sm-padded-t-0 sm-padded-b-0 padded-sm">
+  <div class="col-12 bg-semi-dark center why-legacy sm-padded sm-padded-t-0 sm-padded-b-0 padded-sm">
     <div class="slider-container">
     <!-----------------SLIDE 1--------------->
   
