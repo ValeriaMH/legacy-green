@@ -13,10 +13,9 @@
     <div class="col-3_sm-4_xs-12 padded-1 hide-sm">
       <h4 class="editable"> Quick Links </h4>
       <nav>
-        <a href="{{ site.data.navigation.quick-links.link-1.url }}"> {{ site.data.navigation.quick-links.link-1.name }} </a>
-        <a href="{{ site.data.navigation.quick-links.link-2.url }}"> {{ site.data.navigation.quick-links.link-2.name }} </a>
-        <a href="{{ site.data.navigation.quick-links.link-3.url }}"> {{ site.data.navigation.quick-links.link-3.name }} </a>
-        <a href="{{ site.data.navigation.quick-links.link-4.url }}"> {{ site.data.navigation.quick-links.link-4.name }} </a>
+        {% for item in site.data.navigation.quick-links %}
+            <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
       </nav>
     </div>
   
@@ -24,11 +23,9 @@
     <div class="col-3_sm-4_xs-12 padded-1">
       <h4 class="editable"> Explore </h4>
       <nav>
-        <a href="{{ site.data.navigation.menu.link-1.url }}"> {{ site.data.navigation.menu.link-1.name }} </a>
-        <a href="{{ site.data.navigation.menu.link-2.url }}"> {{ site.data.navigation.menu.link-2.name }} </a>
-        <a href="{{ site.data.navigation.menu.link-3.url }}"> {{ site.data.navigation.menu.link-3.name }} </a>
-        <a href="{{ site.data.navigation.menu.link-4.url }}"> {{ site.data.navigation.menu.link-4.name }} </a>
-        <a href="{{ site.data.navigation.menu.link-5.url }}"> {{ site.data.navigation.menu.link-5.name }} </a>
+        {% for item in site.data.navigation.footer-menu %}
+            <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
       </nav>
     </div>
   
@@ -37,60 +34,18 @@
       <h4 class="editable"> Connect </h4>
       <nav>
             
+        {% for item in site.data.navigation.social %}
+        <a href="{{item.url }}" target="_blank">
+            <i class="{{item.icon }}"></i>
+        </a>
+        {% endfor %}
 
-            {% if site.data.navigation.social.facebook == true %}
-
-            <a href="{{ site.data.site-settings.social.facebook_url }}">
-                <i class="fab fa-facebook"></i>
-            </a>
-
-            {% endif %}
-
-            {% if site.data.navigation.social.instagram == true %}
-
-            <a href="{{ site.data.site-settings.social.instagram_url }}">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            {% endif %}
-
-            {% if site.data.navigation.social.youtube == true %}
-
-            <a href="{{ site.data.site-settings.social.youtube_url }}">
-                <i class="fab fa-youtube"></i>
-            </a>
-
-            {% endif %}
-
-            {% if site.data.navigation.social.pinterest == true %}
-
-            <a href="{{ site.data.site-settings.social.pinterest_url }}">
-                <i class="fab fa-pinterest"></i>
-            </a>
-
-            {% endif %}
-
-            {% if site.data.navigation.social.tik-tok == true %}
-
-            <a href="{{ site.data.site-settings.social.tik-tok_url }}">
-                <i class="fab fa-tiktok"></i>
-            </a>
-
-            {% endif %}
-
-            {% if site.data.navigation.social.twitter == true %}
-
-            <a href="{{ site.data.site-settings.social.twitter_url }}">
-                <i class="fab fa-twitter"></i>
-            </a>
-
-            {% endif %}
       </nav>  
     </div>
 
     <div class="col-12 center padded-sm padded-b-05">
         <p class="subtitle-2 margin-b-0"> Website by
-            <a href="https://www.picaronstudio.com"> Picaron Studio
+            <a href="https://www.picaronstudio.com" target="_blank"> Picaron Studio
             </a>
         </p>
         <p class="subtitle-2"> Copyright 2022</p>

@@ -2,6 +2,7 @@ general:
   logo_image: /images/legacy-green-logo.png
   logo-max-width: 100%
   menu-logo_image: /images/legacy-green-logo.png
+  explore-logo_image: /images/legacy-green-logo-white.png
   form-email:
 technical:
   fonts-embed: >-

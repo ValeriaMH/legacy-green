@@ -14,38 +14,50 @@ menu:
   link-5: 
     name: Contact
     url: /contact
-social:
-  instagram: true
-  facebook: true
-  youtube: false
-  pinterest: false
-  twitter: false
-  tik-tok: true
+menu:
+- name: Services
+  url: /services
+- name: Why choose us
+  url: /why-choose-us
+- name: About us
+  url: /about
+- name: Contact
+  url: /contact
 quick-links:
-  link-1:
-    name: Acquire our services
-    url: /services#acquire
-    id: order
-  link-2: 
-    name: Why go green
-    url: /why-choose-us#go-green
-    id: meals
-  link-3: 
-    name: Our story
-    url: /about
-    id: how
-  link-4: 
-    name: Our Values
-    url: /about#values
-    id: peru
+- name: Acquire our services
+  url: /services#acquire
+- name: Why go green
+  url: /why-choose-us#go-green
+- name: Our story
+  url: /about
+- name: Our Values
+  url: /about#values
+footer-menu:
+- name: Home
+  url: /index
+- name: Services
+  url: /services
+- name: Why choose us
+  url: /why-choose-us
+- name: About us
+  url: /about
+- name: Contact
+  url: /contact
+social:
+- url: https://www.instagram.com/legacygreen.au/
+  icon: fab fa-instagram
+- url: https://www.facebook.com/profile.php?id=100083023674310
+  icon: fab fa-facebook-square
+- url: https://www.tiktok.com/@legacygreen.au
+  icon: fab fa-tiktok
 explore-menu:
-- name: Order here
-  url: /menu
-- name: How delivery works
-  url: /delivery
+- name: Request a FREE consultation
+  url: 
+- name: Our Services
+  url: /services
+- name: Why go green
+  url: /why-choose-us#go-green
 - name: Contact us
   url: /contact
-- name: Connect with us on Facebook
-  url: /menu
 - name: Explore our website
   url: /index
