@@ -52,7 +52,7 @@ social:
   icon: fab fa-tiktok
 explore-menu:
 - name: Request a FREE consultation
-  url: 
+  url: /index#free-consultation
 - name: Our Services
   url: /services
 - name: Why go green
