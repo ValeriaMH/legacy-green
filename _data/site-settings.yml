@@ -3,7 +3,6 @@ general:
   logo-max-width: 100%
   menu-logo_image: /images/legacy-green-logo.png
   explore-logo_image: /images/legacy-green-logo-white.png
-  form-email:
 technical:
   fonts-embed: >-
     <link rel="preconnect" href="https://fonts.googleapis.com">  <link
@@ -21,8 +20,6 @@ seo:
   description:
   keywords:
   social_image:
-  author:
-  favicon_image:
 social:
   instagram_url: https://www.instagram.com/legacygreen.au/
   facebook_url: https://www.facebook.com/profile.php?id=100083023674310
@@ -31,4 +28,4 @@ social:
   pinterest_url:
   twitter_url:
   linkedin_url:
-  instagram-embed:
+
