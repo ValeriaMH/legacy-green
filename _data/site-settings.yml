@@ -19,7 +19,7 @@ seo:
   title: Legacy Green Cleaning Services | Commercial Green Cleaning
   description:
   keywords:
-  social_image:
+  social_image: /images/legacy-green-logo.png
 social:
   instagram_url: https://www.instagram.com/legacygreen.au/
   facebook_url: https://www.facebook.com/profile.php?id=100083023674310
@@ -28,4 +28,3 @@ social:
   pinterest_url:
   twitter_url:
   linkedin_url:
-

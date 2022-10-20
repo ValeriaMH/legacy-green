@@ -1,48 +1,48 @@
 text_colors:
   dark-text_color: '#000000'
-  semi-dark-text_color: '#107B76'
+  semi-dark-text_color: '#107b76'
   grey-text_color: '#585857'
-  warm-text_color: '#C1A7B0'
-  accent-text_color: '#95C121'
-  featured-text_color: '#F7B944'
+  warm-text_color: '#c1a7b0'
+  accent-text_color: '#95c121'
+  featured-text_color: '#f7b944'
   white-text_color: '#ffffff'
 background_colors:
   dark-background_color: '#000000'
-  semi-dark-background_color: '#107B76'
+  semi-dark-background_color: '#107b76'
   grey-background_color: '#585857'
-  warm-background_color: '#C1A7B0'
-  accent-background_color: '#95C121'
-  light-accent-background_color: '#95C121'
-  featured-background_color: '#F7B944'
-  light-featured-background_color: '#F7B944'
+  warm-background_color: '#c1a7b0'
+  accent-background_color: '#95c121'
+  light-accent-background_color: '#95c121'
+  featured-background_color: '#f7b944'
+  light-featured-background_color: '#f7b944'
   light-background_color: '#ffffff'
   white-background_color: '#ffffff'
 body:
-  body-font-family: "'Livvic', sans-serif;"
+  body-font-family: '''Livvic'', sans-serif;'
   body-line-height: '1.1'
-  body-heading-size: '2rem'
-  body-sub-heading-size: '1.8rem'
-  body-small-heading-size: '1.6rem'
-  body-text-size: '1rem'
+  body-heading-size: 2rem
+  body-sub-heading-size: 1.8rem
+  body-small-heading-size: 1.6rem
+  body-text-size: 1rem
   body-text-weight: '200'
   body-background_color: '#ffffff'
 menu:
-  mobile-menu-text-size: '1.5rem'
+  mobile-menu-text-size: 1.5rem
   mobile-menu-text-weight: '400'
   nav-background_color: '#efebea'
   nav-text_color: '#ffffff'
 footer:
   footer-text_color: '#000000'
-  footer-text-size: '0.9rem'
+  footer-text-size: 0.9rem
   footer-text-weight: '400'
 buttons:
   default-button:
-    default-background_color: '#107B76'
-    default-border_color: '#107B76'
+    default-background_color: '#107b76'
+    default-border_color: '#107b76'
     default-text_color: '#ffffff'
     default-hover-background_color: '#ffffff'
-    default-hover-border_color: '#107B76'
-    default-hover-text_color: '#107B76'
+    default-hover-border_color: '#107b76'
+    default-hover-text_color: '#107b76'
   inverted-button:
     inverted-background_color: '#ffffff'
     inverted-border_color: '#107B76'
@@ -58,19 +58,15 @@ buttons:
     special-hover-border_color: '#daaf64'
     special-hover-text_color: '#daaf64'
 special-text:
-  big-heading-text-size: '4rem'
+  big-heading-text-size: 4rem
   big-heading-text-weight: '700'
-  medium-heading-text-size: '2.4rem'
+  medium-heading-text-size: 2.4rem
   medium-heading-text-weight: '400'
-  big-text-size: '1.5rem'
-  story-team-font-family: "'Livvic', sans-serif;"
-  story-team-text-size: '3.5rem'
-  number-font-family: "'Livvic', sans-serif;"
-  number-text-size: '2.7rem'
+  big-text-size: 1.5rem
+  story-team-font-family: '''Livvic'', sans-serif;'
+  story-team-text-size: 3.5rem
+  number-font-family: '''Livvic'', sans-serif;'
+  number-text-size: 2.7rem
 testimonial:
   card_color: '#ffffff'
   author-text-weight: bold
-
-  
-
-  
